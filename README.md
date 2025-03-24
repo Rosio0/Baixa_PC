@@ -1,5 +1,5 @@
 ## 📌 Baixa_PC - Gestão de Processos de Equipamentos Escolares
-##🖥️ Descrição
+ 🖥️ Descrição
 O Baixa_PC é uma aplicação desenvolvida em C# com Windows Forms, MySQL e integração com Excel. Permite gerir a entrega, atualização e baixa de equipamentos escolares de forma eficiente.
 
 ## 🚀 Funcionalidades
