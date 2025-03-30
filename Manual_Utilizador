@@ -1,0 +1,118 @@
+Manual do Utilizador
+Sistema de Automação para Baixa de Computadores
+📅 Versão: 1.0
+📌 Autor: David Ambrósio
+📍 Ano Letivo: 2024/2025
+
+Índice
+1️⃣ Introdução
+2️⃣ Objetivo do Programa
+3️⃣ Requisitos do Sistema
+4️⃣ Instalação e Configuração
+5️⃣ Interface e Funcionalidades
+6️⃣ Guia Passo a Passo
+7️⃣ Solução de Problemas
+8️⃣ Conclusão e Contacto
+
+1️⃣ Introdução
+O Sistema de Automação para Baixa de Computadores foi desenvolvido para otimizar o processo de registo, consulta e baixa de equipamentos escolares. Ele permite aos utilizadores gerir computadores de forma eficiente, reduzindo a necessidade de trabalho manual.
+
+Esta aplicação foi desenvolvida em C# no Visual Studio com ligação a uma base de dados MySQL e integração com Excel para facilitar a importação e exportação de dados.
+
+2️⃣ Objetivo do Programa
+✔ Automatizar a gestão da baixa de equipamentos
+✔ Reduzir o tempo necessário para atualizar registos
+✔ Evitar erros manuais na inserção de dados
+✔ Facilitar a exportação de informações para relatórios
+
+3️⃣ Requisitos do Sistema
+Requisitos de Hardware
+✅ Processador: Intel Core i3 ou superior
+✅ Memória RAM: 4GB (mínimo) – 8GB (recomendado)
+✅ Armazenamento: 500MB de espaço livre
+✅ Monitor: Resolução mínima de 1366x768
+
+Requisitos de Software
+✅ Sistema Operativo: Windows 10/11
+✅ Framework: .NET Framework 4.8 ou superior
+✅ Banco de Dados: MySQL Server instalado e configurado
+✅ Bibliotecas:
+🔹 EPPlus (Manipulação de Excel)
+🔹 iTextSharp (Geração de PDFs)
+🔹 MySql.Data (Ligação à base de dados)
+
+4️⃣ Instalação e Configuração
+Passos para Instalar o Programa
+1️⃣ Fazer o download do ficheiro de instalação.
+2️⃣ Extrair os ficheiros para uma pasta no computador.
+3️⃣ Executar o setup.exe e seguir as instruções do instalador.
+4️⃣ Após a instalação, abrir o programa e configurar a ligação à base de dados.
+
+Configuração do Banco de Dados
+📌 A aplicação precisa de uma base de dados MySQL ativa.
+📌 No primeiro uso, será necessário inserir as credenciais do banco de dados.
+📌 O programa irá criar as tabelas automaticamente.
+
+5️⃣ Interface e Funcionalidades
+📌 Tela Principal
+🔹 Campo de Pesquisa: Permite procurar um aluno pelo NIF.
+🔹 Botões de Gestão:
+
+Inserir → Adicionar novo aluno/equipamento.
+
+Atualizar → Modificar dados de um registo existente.
+
+Gerar PDF → Exportar informações em formato PDF.
+
+Baixar Equipamento → Finalizar o processo de baixa do equipamento.
+
+📌 Importação de Dados do Excel
+✅ O programa lê e insere automaticamente os dados da folha de cálculo no banco de dados.
+✅ O ficheiro deve seguir um formato padronizado (cabeçalhos corretos).
+
+📌 Exportação para PDF
+✅ Permite gerar um relatório detalhado com os dados do aluno e equipamento.
+✅ O relatório inclui data, assinatura e informações do estado do equipamento.
+
+6️⃣ Guia Passo a Passo
+🔍 Pesquisar um Registo
+1️⃣ Inserir o NIF do aluno no campo de pesquisa.
+2️⃣ Clicar em "Pesquisar".
+3️⃣ O sistema irá exibir os detalhes do aluno e do equipamento associado.
+
+📝 Atualizar Informações
+1️⃣ Pesquisar um aluno existente.
+2️⃣ Alterar os campos desejados.
+3️⃣ Clicar em "Atualizar".
+4️⃣ O sistema irá gravar as alterações na base de dados e no Excel.
+
+📂 Exportar Relatório em PDF
+1️⃣ Pesquisar um aluno.
+2️⃣ Clicar no botão "Gerar PDF".
+3️⃣ Escolher onde guardar o ficheiro.
+4️⃣ O documento será gerado com todos os dados necessários.
+
+📊 Registrar um Novo Equipamento
+1️⃣ Clicar em "Inserir".
+2️⃣ Preencher os dados do aluno e do equipamento.
+3️⃣ Clicar em "Salvar".
+
+📉 Realizar a Baixa do Equipamento
+1️⃣ Pesquisar o aluno.
+2️⃣ Clicar no botão "Baixar Equipamento".
+3️⃣ O estado será atualizado na base de dados.
+
+7️⃣ Solução de Problemas
+Erro	Causa Provável	Solução
+"NIF não encontrado"	O aluno não está registado	Verificar se o NIF foi inserido corretamente
+"Erro ao carregar Excel"	Formato incorreto	Certificar-se de que os cabeçalhos das colunas estão corretos
+"Erro na conexão com MySQL"	Credenciais erradas	Verificar as configurações do banco de dados na aplicação
+"PDF não gerado"	Falha no iTextSharp	Atualizar a biblioteca e verificar permissões de escrita
+"Atualização não salva"	Problema na gravação do Excel	Garantir que o ficheiro Excel não está aberto noutro programa
+8️⃣ Conclusão e Contacto
+O Sistema de Automação para Baixa de Computadores é uma solução eficiente e prática para a gestão de equipamentos escolares. Ele reduz o tempo gasto com registos manuais e facilita o acesso às informações.
+
+Caso tenha dúvidas ou precise de suporte, contacte:
+📧 Email: davidambrosio04@gmail.com
+📍 Escola Secundária de Pinhal Novo
+
