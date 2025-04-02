@@ -43,8 +43,8 @@ namespace Baixa_PC
                     iTextSharp.text.Image imagem2 = iTextSharp.text.Image.GetInstance(caminhoImagem2);
 
                     // 🔹 2️⃣ Ajustar tamanho das imagens
-                    imagem1.ScaleAbsolute(130f, 50f); // Largura x Altura
-                    imagem2.ScaleAbsolute(230f, 50f);
+                    imagem1.ScaleAbsolute(150f, 50f); // Largura x Altura
+                    imagem2.ScaleAbsolute(250f, 50f);
 
                     // 🔹 3️⃣ Criar tabela para organizar as imagens
                     PdfPTable tabelaCabecalho = new PdfPTable(2);
@@ -395,9 +395,10 @@ namespace Baixa_PC
                 MessageBox.Show("✅ Dados atualizados no banco de dados!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+
             // Agora atualiza também o Excel
             ExcelHelper.AtualizarExcel(txtNIFAluno.Text, txtNomeAluno.Text, txtTurma.Text, txtObservacoes.Text);
-
+            AtualizarExcel(txtNIFAluno.Text, txtNomeAluno.Text, txtTurma.Text, txtObservacoes.Text);
             lblStatus.Visible = false;
 
         }
